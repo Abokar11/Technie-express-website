@@ -2,6 +2,7 @@ const path = require('path');
 const express = require('express');
 const hbs = require('hbs');
 const app = express();
+const port = process.env.PORT || 3000;
 // using path.join and dirname for  files in public folder
 app.use(express.static(path.join(__dirname, '../public')))
 // Registering partials
@@ -27,6 +28,6 @@ app.get('/reachUs', (req,res) => {
     res.render('reachUs');
 })
 
-app.listen(3000, () => {
-    console.log('Server is listening at port number 3000');
+app.listen(port, () => {
+    console.log('Server is listening at port number ' + port);
 })
