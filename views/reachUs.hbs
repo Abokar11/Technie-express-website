@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>home page</title>
+    {{!-- using bootstrap online links --}}
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+    {{!-- this is a shared header from partials --}}
+    {{> header}}
+    <div class="container">
+        <h1>You can reach us by using this map</h1>
+        <h4>and our address: </h4>
+        <p>lovely professional phagwara, punjab, India</p>
+        {{!-- N.B this below map is just and example not real --}}
+        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13643.029332485708!2d75.7049886!3d31.2551404!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x4cc934c58d0992ec!2sLovely%20Professional%20University!5e0!3m2!1sen!2sin!4v1587132070382!5m2!1sen!2sin" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+    </div>
+    {{!-- this is a shared footer from partials --}}
+    <footer>
+        {{> footer}}
+    </footer>
+</body>
+</html>

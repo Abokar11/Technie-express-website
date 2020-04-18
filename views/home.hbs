@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>home page</title>
+    {{!-- using bootstrap online links --}}
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+    {{!-- this is a shared header from partials --}}
+    {{> header}}
+    <div class="container">
+        <h1>Welcome to  Techie website</h1>
+        <div class="row">
+            <div class="col-xs-md-xl-6">
+                <img src="/img/processor.jpg">
+                <p>This is the processor storage</p>
+            </div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <div class="col-xs-md-xl-6">
+                <h6>Here is the information of storages</h6>
+                <pre>
+ Processor or Virtual Storage
+· 1 Bit = Binary Digit
+· 8 Bits = 1 Byte
+· 1024 Bytes = 1 Kilobyte
+· 1024 Kilobytes = 1 Megabyte
+· 1024 Megabytes = 1 Gigabyte
+· 1024 Gigabytes = 1 Terabyte
+· 1024 Terabytes = 1 Petabyte
+· 1024 Petabytes = 1 Exabyte
+· 1024 Exabytes = 1 Zettabyte
+· 1024 Zettabytes = 1 Yottabyte
+· 1024 Yottabytes = 1 Brontobyte
+· 1024 Brontobytes = 1 Geopbyte
+                </pre>
+            </div>
+        </div>
+    </div>
+    {{!-- this is a shared footer from partials --}}
+    <footer>
+        {{> footer}}
+    </footer>
+</body>
+</html>
